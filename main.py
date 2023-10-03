@@ -10,7 +10,7 @@ from fastapi import FastAPI, HTTPException, Form
 from fastapi.middleware.cors import CORSMiddleware
 import json
 
-app = main()
+app = FastAPI()
 
 # Manejar los origenes que se permiten en el microservicio, ponienod la ip del servidor donde se aloja la página
 origins = [
