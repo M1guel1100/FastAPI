@@ -14,7 +14,8 @@ app = FastAPI()
 
 # Manejar los origenes que se permiten en el microservicio, ponienod la ip del servidor donde se aloja la página
 origins = [
-    "http://127.0.0.1:5500", "http://testvocacionaludeg.x10.mx"
+    "http://127.0.0.1:5500", 
+    "http://testvocacionaludeg.x10.mx",
 ]
 
 # Permite acceso completo a los origenes especificados con anterioridad
