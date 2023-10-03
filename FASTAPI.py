@@ -28,11 +28,11 @@ app.add_middleware(
 
 # Configuración de la base de datos PostgreSQL
 conexion = psycopg2.connect(
-    host="localhost",
-    port="5432",
+    host="pg-365cc6ea-modular.aivencloud.com",
+    port="10496",
     database="modularbd",
-    user="postgres",
-    password="postgres"
+    user="avnadmin",
+    password="AVNS_TLo1tmhPI2GwYvBAN6o"
 )
 
 # Cargar datos desde la base de datos
@@ -255,9 +255,3 @@ def save_responses_to_database(responses, carrera_recomendada):
     cursor.execute(query, (response_text, carrera_recomendada))
     conexion.commit()
     cursor.close()
-
-
-# Constructor y carga de microservicio
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
