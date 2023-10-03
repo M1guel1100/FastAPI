@@ -105,7 +105,7 @@ def train_model_with_user_responses():
     y_one_hot = to_categorical(y, output_shape)
 
     # Entrenar el modelo
-    model.fit(X, y_one_hot, epochs=50, batch_size=32)
+    model.fit(X, y_one_hot, epochs=25, batch_size=32)
 
     try:
         # Guardar el modelo entrenado
