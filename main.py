@@ -64,6 +64,7 @@ def load_or_create_model(input_shape, output_shape):
         ])
         # ADAM algoritmo de optimización para entrenamiento de la red neuronal.
         # Se guarda el modelo en el directorio especificado
+        model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
         model.save(model_filename)
         return model
 
