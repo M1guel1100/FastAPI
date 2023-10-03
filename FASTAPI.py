@@ -48,7 +48,7 @@ current_question_id = None
 contador = 0
 user_responses = []
 carrera_recomendada = None
-model_filename = "C:\\Users\\M1guel110\\Desktop\\MICROSERVICIO MODULAR\\modelo.h5"  # Ruta completa para guardar el modelo
+model_filename = "modelo.h5"  # Ruta completa para guardar el modelo
 
 # Función para cargar o crear el modelo
 def load_or_create_model(input_shape, output_shape):
